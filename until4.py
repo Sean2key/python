@@ -31,3 +31,38 @@ print(maxs)
 # 数字列表 合
 sums = sum(nums)
 print(sums)
+
+# 列表解析
+squares = [value**2 for value in range(1,10)]
+print(squares)
+		# 循环语句放前面，循环条件放后面
+
+# 切片
+print(names)
+print(names[0:3])		# 输出下标0~3
+print(names[1:4])
+print(names[2:])
+print(names[:3])
+print(names[-2:])
+
+# 遍历切片
+for name in names[:3]:
+	print(name.title())
+
+# 复制列表
+cars = ['dawo', 'toyota', 'benchi', 'Audi', 'Qiya']
+newcars = cars[:]
+cars.append('qq')
+newcars.append('fengtian')
+print(newcars)
+print(cars)
+
+# 元祖 不能改变值的列表
+dimensions = (200, 50)
+print(dimensions)
+print(dimensions[0])
+print(dimensions[1])
+
+# 遍历元祖
+for i in dimensions:
+	print(i)
